@@ -1,0 +1,91 @@
+extends includes/layout.pug
+
+block prepend head
+    title IMIND
+
+block header
+    ul.menu.hidden
+        li: a(href='#') what we do
+        li: a(href='#') products
+        li: a(href='#') technology
+        li: a(href='#') contact us
+
+    .hero-logo-pre
+
+    .hero-logo
+        img(src='static/img/logo.png')
+
+    .hero-box
+        .hero-bg
+            img(src='static/img/graph-paper.png')
+        .hero-li
+            .item: img(src='static/img/tile-smart-energy.png')
+            .item: img(src='static/img/tile-sinosis.png')
+            .item: img(src='static/img/tile-research.png')
+
+block main
+    section
+        h2 What We Do
+
+        article
+            +hh3('SMART+ENERGY', 'hi-green')
+            .hbox
+                p
+                    | We strive to develop the <b>best enterprise smart energy solution in the world</b>.
+                    | We offer a mobile app for your users, and a web dashboard for your company.
+                    | All <b>backed by powerful machine learning algorithms</b> and customized
+                    | for your infrastructure and metering devices.
+
+                ul
+                    li: a(href='#contact') + Learn how our technology works
+                    li: a(href='#contact') + Select the best plan for you
+                    li: a(href='#contact') + Discuss custom requirements
+
+        article
+            +hh3('SINOSIS', 'hi-magenta')
+            .hbox
+                p
+                    | <i>SINOSIS</i> is a unique initiative.
+                    | We aim to create a <b>system aiding doctors in the early diagnosis of autism spectrum disorders</b>,
+                    | using voice samples of children between the ages of one and three.
+
+                ul
+                    li: a(href='http://sinosis.pl') + Learn more about the project
+                    li: a(href='http://sinosis.pl/#upload') + Submit a voice sample
+
+        article
+            +hh3('AI Research', 'hi-cyan')
+            .hbox
+                p
+                    | To create <b>artificial intelligence systems with state-of-the-art performance</b>,
+                    | we do <b>our own research</b>.
+                    | This is the real deal, not some canned building blocks!
+
+                ul
+                    li: a(href='#contact') + Arrange a new project
+
+
+    section
+        a(name='contact'): h2 Contact Us
+        div.contact-card-box
+            .contact-card-bg
+                img(src='static/img/graph-paper.png')
+            .contact-card
+                img.contact-card-logo(src='static/img/logo.png')
+                div Poznań, Poland
+                hr
+                ul
+                    li: a.contact-card-link(href='mailto:hello@imind.pl')
+                        | > hello@imind.pl
+                    li: a.contact-card-link(href='https://linkedin.com/company/imind-ai')
+                        | > linkedin.com/imind-ai
+                    li: a.contact-card-link(href='https://github.com/imind-ai')
+                        | > github.com/imind-ai
+
+                
+
+
+block footer
+    hr
+    small.copyright &copy; Copyright 2019 IMIND Sp. z o.o. All rights reserved.
+

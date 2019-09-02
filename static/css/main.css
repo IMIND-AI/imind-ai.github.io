@@ -1,0 +1,240 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Righteous", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.33em;
+  color: black;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration-line: none;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 165%;
+  letter-spacing: 0.005em;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+article {
+  margin: 0 80px;
+  margin-bottom: 40px;
+}
+
+article p {
+  width: 400px;
+}
+
+article ul {
+  width: 300px;
+}
+
+footer {
+  margin: 20px 0;
+}
+
+footer hr {
+  margin: 20px 0;
+}
+
+footer .copyright {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+
+.highlight-container h2 {
+  margin: 0;
+}
+
+.highlight-container h3 {
+  margin: 0;
+}
+
+.hi-green {
+  background-color: #42FF00;
+}
+
+.hi-magenta {
+  background-color: #AD00FF;
+}
+
+.hi-cyan {
+  background-color: #00FFEF;
+}
+
+.highlight {
+  position: relative;
+  height: 20px;
+  top: -18px;
+  left: -10px;
+  width: 120%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.green .highlight {
+  background-color: green;
+}
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.hero-logo-pre {
+  height: 50px;
+}
+
+.hero-logo {
+  display: flex;
+}
+
+.hero-logo img {
+  height: 64px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.hero-box {
+  position: relative;
+}
+
+.contact-card-logo {
+  height: 20px;
+  width: auto;
+}
+
+.hero-bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-box {
+  height: 243px;
+  display: flex;
+  margin: 50px 0;
+}
+
+.hero-li {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  margin: 0 60px;
+}
+
+.item {
+  display: flex;
+}
+
+.item img {
+  transition: 0.2s filter ease-in-out;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+  margin: auto 0;
+}
+
+.item img:hover {
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+}
+
+.menu {
+  margin: 40px auto;
+  max-width: 850px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu a {
+  transition: 0.2s background-color ease-in-out;
+  font-family: "Righteous", sans-serif;
+  font-size: 17px;
+  padding: 2px 4px;
+  color: black;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.contact-card-bg {
+  position: absolute;
+  z-index: -1;
+  margin-top: 30px;
+}
+
+.contact-card {
+  width: 350px;
+  padding: 30px 25px 10px 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-color: white;
+}
+
+.contact-card hr {
+  margin: 10px 0;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-card li {
+  margin-bottom: 5px;
+}
+
+.contact-card a {
+  font-size: 16px;
+}
+
+.contact-card ul {
+  margin: 0;
+}
+
+.contact-card-box {
+  height: 280px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
