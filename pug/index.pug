@@ -19,16 +19,20 @@ block header
         .hero-bg
             img(src='static/img/graph-paper.png')
         .hero-li
-            .item: img(src='static/img/tile-smart-energy.png')
-            .item: img(src='static/img/tile-sinosis.png')
-            .item: img(src='static/img/tile-research.png')
+            a.item(href='#smart-energy')
+                img(src='static/img/tile-smart-energy.png')
+            a.item(href='#sinosis')
+                img(src='static/img/tile-sinosis.png')
+            a.item(href='#research')
+                img(src='static/img/tile-research.png')
 
 block main
     section
         h2 What We Do
 
         article
-            +hh3('SMART+ENERGY', 'hi-green')
+            a(name='smart-energy')
+                +hh3('SMART+ENERGY', 'hi-green')
             .hbox
                 p
                     | We strive to develop the <b>best enterprise smart energy solution in the world</b>.
@@ -42,7 +46,8 @@ block main
                     li: a(href='#contact') + Discuss custom requirements
 
         article
-            +hh3('SINOSIS', 'hi-magenta')
+            a(name='sinosis')
+                +hh3('SINOSIS', 'hi-magenta')
             .hbox
                 p
                     | <i>SINOSIS</i> is a unique initiative.
@@ -54,7 +59,8 @@ block main
                     li: a(href='http://sinosis.pl/#upload') + Submit a voice sample
 
         article
-            +hh3('AI Research', 'hi-cyan')
+            a(name='research')
+                +hh3('AI Research', 'hi-cyan')
             .hbox
                 p
                     | To create <b>artificial intelligence systems with state-of-the-art performance</b>,
@@ -66,7 +72,8 @@ block main
 
 
     section
-        a(name='contact'): h2 Contact Us
+        a(name='contact')
+            h2 Contact Us
         div.contact-card-box
             .contact-card-bg
                 img(src='static/img/graph-paper.png')
